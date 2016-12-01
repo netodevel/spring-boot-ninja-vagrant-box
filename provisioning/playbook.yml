@@ -1,0 +1,9 @@
+
+---
+- name: Configure spring boot ninja box
+  hosts: all
+  sudo: true
+  roles:
+    - { role: java, tags: ['java'] }
+    - { role: nginx, tags: ['nginx'] }
+    

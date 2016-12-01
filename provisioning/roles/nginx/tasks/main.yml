@@ -1,0 +1,5 @@
+- name: "update packages and install nginx"
+  apt: name=nginx state=latest update_cache=yes install_recommends=yes
+
+- name: "copy the configuration of nginx.conf"
+  copy: src=nginx.conf dest=/etc/nginx/
