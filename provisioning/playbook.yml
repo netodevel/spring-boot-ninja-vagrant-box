@@ -5,5 +5,7 @@
   sudo: true
   roles:
     - { role: java, tags: ['java'] }
+    - { role: defaults, tags: ['defaults'] } 
     - { role: nginx, tags: ['nginx'] }
+
     

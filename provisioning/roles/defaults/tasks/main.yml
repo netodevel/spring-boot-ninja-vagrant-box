@@ -1,0 +1,6 @@
+- name: install defaults packages
+  become: yes
+  apt: name={{item}} state=installed
+  with_items:
+    - curl
+    - htop
