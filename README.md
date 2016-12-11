@@ -1,17 +1,18 @@
-#Spring Ninja Box        
+#Spring Boot Vagrant Box
 base vagrant box for environment production with spring boot 
 
+#Alert
 
-#Warning 
-    box in development
+In development. Help us! Make a fork!
 
 #Contains
 
-* Nginx
-* Java
-* PostgreSQL (Todo)
-* Job for backup database (Todo)
-* Htop (Todo)
+* nginx
+* java
+* mysql
+* job for backup database (Todo)
+* htop
+* curl
 
 #Requirements
   
@@ -19,9 +20,13 @@ base vagrant box for environment production with spring boot
   * Vagrant
   * Ansible
 
-#Execute
+#Usage
+	
+	host $ git clone https://github.com/NetoDevel/spring-boot-ninja-vagrant-box.git
+	host $ cd spring-boot-ninja-vagrant-box
+	host $ vagrant up
+	host $ vagrant ssh
 
-    vagrant up
-    
+	    
 
 

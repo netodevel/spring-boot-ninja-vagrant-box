@@ -1,0 +1,10 @@
+- name: install mysql
+  apt:
+    pkg: "{{item}}"
+    update_cache: yes
+  with_items: mysql_packages
+
+- name: run mysql
+  service:
+    name: mysql
+    state: started
