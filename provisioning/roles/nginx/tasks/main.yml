@@ -1,5 +1,6 @@
 - name: "update packages and install nginx"
   apt: name=nginx state=latest update_cache=yes install_recommends=yes
 
-- name: "copy the configuration of nginx.conf"
-  copy: src=nginx.conf dest=/etc/nginx/
+- name: Configure nginx - nginx.conf
+  template: src=nginx.conf.j2 dest=/etc/nginx/
+  notify: restart nginx
